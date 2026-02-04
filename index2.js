@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const port = 8000;
 
-app.use(express.json()); // use ONCE
+app.use(express.json()); //  use ONCE
 
 const students = [
-    { id: 1, name: "Tanisha", age: 20, branch:"CSE" },
-    { id: 2, name: "Tashu", age: 21,branch:"CSE" },
-    { id: 3, name: "Rohit", age: 22 ,branch:"Civil"},
-     { id: 5, name: "Yanshi", age: 20, branch:"IT" },
+    { id: 1, name: "Tanisha", age: 21, branch:"CSE" },
+    { id: 2, name: "Ayushi", age: 20,branch:"ECE" },
+    { id: 3, name: "Rohit", age: 22 ,branch:"CSE"},
+     { id: 5, name: "Tashu", age: 21, branch:"IT" },
 
 ];
 
@@ -58,10 +58,9 @@ app.post("/student/register", (req, res) => {
         data
     });
 });
-
 app.put("/students/:id",(req,res)=>{
     const id = parseInt(req.params.id);
-    const{name, age, branch} = req.body
+    const{name, age} = req.body
 
     const student = students.find(s => s.id === id);
 
@@ -72,7 +71,6 @@ app.put("/students/:id",(req,res)=>{
 
     if(name) student.name = name;
     if(age) student.age = age;
-    if(branch) student.branch=branch;
 
     res.json({
         message:"Student updated successfully",
