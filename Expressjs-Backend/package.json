@@ -1,0 +1,24 @@
+{
+  "name": "expressjs-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanisha190605/Backend-Dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanisha190605/Backend-Dev/issues"
+  },
+  "homepage": "https://github.com/Tanisha190605/Backend-Dev#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
