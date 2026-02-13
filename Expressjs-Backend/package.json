@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Tanisha190605/Backend-Dev#readme",
   "description": "",
   "dependencies": {
+    "ejs": "^4.0.1",
     "express": "^5.2.1"
   }
 }
